@@ -4,7 +4,9 @@
     <list default="true" id="5c37313f-8338-46d3-b3be-baf235cf9179" name="Default Changelist" comment="RL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/k_folds.py" beforeDir="false" afterPath="$PROJECT_DIR$/k_folds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lineal_polinomic_regresion.py" beforeDir="false" afterPath="$PROJECT_DIR$/lineal_regresion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic_regresion.py" beforeDir="false" afterPath="$PROJECT_DIR$/logistic_regresion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/split_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/split_dataset.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">

@@ -52,23 +52,22 @@ class LinearRegression(BaseModel):
         plt.plot(x, y, 'o')
         plt.plot(x, self.predicted, '-')
 
-
-class LinearRegressionWithB(BaseModel):
-
-    def fit(self, x_train, y_train):
-        # x_expanded = [x_train, 1]
-        x_expanded = np.vstack((x_train, np.ones(len(x_train)))).T
-        # w = ((x_train.T*x_train)^-1)*x_train.T*y_train
-        w = np.linalg.inv(x_expanded.T.dot(x_expanded)).dot(x_expanded.T).dot(y_train)
-        self.model = w
-
-    def predict(self, x):
-        x_expanded = np.vstack((x, np.ones(len(x)))).T
-        self.predicted = x_expanded.dot(self.model.T)
-
-    def plot_model(self, x, y):
-        plt.figure()
-        plt.subplot(1, 1, 1)
-        plt.gca().set_title('Fitting curves')
-        plt.plot(x, y, 'o')
-        plt.plot(x, self.predicted, '-')
+# # y = sin(x)
+# amt_points = 36
+# x = np.linspace(0, 360, num=amt_points)
+# y = np.sin(x * np.pi / 180.)
+# noise = np.random.normal(0, .1, y.shape)
+# noisy_y = y + noise
+#
+# x_train = x
+# y_train = noisy_y
+#
+# x_10 = dataset_manipulation(x, polinomy_grade=1, bias=True)
+# regression = LinearRegression()
+#
+# regression.fit(x_10,y_train)
+# W_10 = regression.model
+# regression.predict(x_10)
+#
+# y_predicted = regression.predicted
+# regression.plot_model(x_train,y_train)

@@ -1,6 +1,6 @@
 import numpy as np
 from metrics import mse
-from lineal_polinomic_regresion import ConstantModel, LinearRegression, LinearRegressionWithB
+from lineal_regresion import ConstantModel, LinearRegression, LinearRegressionWithB
 
 
 def k_folds(x_train, y_train, k=10):

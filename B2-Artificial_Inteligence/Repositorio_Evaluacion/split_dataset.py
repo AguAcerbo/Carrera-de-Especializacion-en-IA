@@ -17,8 +17,12 @@ def train_val_test(dataset, train_percent=70, val_percent=20):
     return train_data, val_data, test_data
 
 
-def dataset_polinomic(x, polinomy_grade=1):
+def dataset_manipulation(x, polinomy_grade=1, bias=True):
     dataset_x = x.copy()
-    for grade in range(2, polinomy_grade+1):
+    for grade in range(2, polinomy_grade + 1):
         dataset_x = np.vstack((np.power(x, grade), dataset_x))
+
+    if bias:
+        dataset_x = np.vstack((dataset_x, np.ones(len(x))))
+
     return dataset_x.T
