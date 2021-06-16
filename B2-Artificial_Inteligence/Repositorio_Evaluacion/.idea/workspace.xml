@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c37313f-8338-46d3-b3be-baf235cf9179" name="Default Changelist" comment="CreacionParaEvaluacion">
+    <list default="true" id="5c37313f-8338-46d3-b3be-baf235cf9179" name="Default Changelist" comment="RL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lineal_polinomic_regresion.py" beforeDir="false" afterPath="$PROJECT_DIR$/lineal_polinomic_regresion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/split_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/split_dataset.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623811009331</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="RL">
+      <created>1623861153651</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623861153651</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,7 +112,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CreacionParaEvaluacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="CreacionParaEvaluacion" />
+    <MESSAGE value="RL" />
+    <option name="LAST_COMMIT_MESSAGE" value="RL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

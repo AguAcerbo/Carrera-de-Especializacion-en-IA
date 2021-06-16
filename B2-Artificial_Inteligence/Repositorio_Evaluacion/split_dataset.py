@@ -15,3 +15,10 @@ def train_val_test(dataset, train_percent=70, val_percent=20):
     test_data = dataset[dataset_index[train_data_idx + val_data_idx:train_data_idx + val_data_idx + test_data_idx]]
 
     return train_data, val_data, test_data
+
+
+def dataset_polinomic(x, polinomy_grade=1):
+    dataset_x = x.copy()
+    for grade in range(2, polinomy_grade+1):
+        dataset_x = np.vstack((np.power(x, grade), dataset_x))
+    return dataset_x.T
