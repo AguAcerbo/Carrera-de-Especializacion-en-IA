@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c37313f-8338-46d3-b3be-baf235cf9179" name="Default Changelist" comment="CreacionParaEvaluacion">
-      <change afterPath="$PROJECT_DIR$/gradient_descent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k-means.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k_folds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lineal_polinomic_regresion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logistic_regresion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/norms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ridge_regularization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/split_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase_1/.ipynb_checkpoints/Ejercicios-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase_1/.ipynb_checkpoints/Ejercicios-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase_1/Ejercicios.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase_1/Ejercicios.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Repositorio_Evaluacion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Repositorio_Evaluacion.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/gradient_descent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +35,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1u0Nb31geG7ZR1vxHz8cr3p27qt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623798841225</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CreacionParaEvaluacion">
+      <created>1623811009331</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623811009331</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +106,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CreacionParaEvaluacion" />
