@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c37313f-8338-46d3-b3be-baf235cf9179" name="Default Changelist" comment="CreacionParaEvaluacion">
-      <change afterPath="$PROJECT_DIR$/get_dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k-means.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k_folds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lineal_polinomic_regresion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic_regresion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/norms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pca.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ridge_regularization.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/split_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Clase_1/.ipynb_checkpoints/Ejercicios-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase_1/.ipynb_checkpoints/Ejercicios-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Clase_1/Ejercicios.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase_1/Ejercicios.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Repositorio_Evaluacion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Repositorio_Evaluacion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradient_descent.py" beforeDir="false" afterPath="$PROJECT_DIR$/gradient_descent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lineal_polinomic_regresion.py" beforeDir="false" afterPath="$PROJECT_DIR$/lineal_polinomic_regresion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +19,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1u0Nb31geG7ZR1vxHz8cr3p27qt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
