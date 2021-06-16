@@ -22,6 +22,7 @@ def PCA_numpy(x, n_components=2):
 
     return B, z, x_recuperada
 
+
 # Codigo de verificacion:
 # x = np.array([[0.8,0.7],[0.1, -0.1]])
 #
