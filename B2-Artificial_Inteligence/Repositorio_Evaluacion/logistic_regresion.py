@@ -25,7 +25,6 @@ class LogisticRegression(bias=False):
         # lr = learning rate
         # b = cantidad de batches
 
-
         # si decidimos utilizar bias, agregamos como siempre una columna con '1' al dataset de entrada
         if self.bias:
             x = np.hstack((np.ones((x.shape[0], 1)), x))

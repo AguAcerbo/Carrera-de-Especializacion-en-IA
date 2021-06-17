@@ -1,6 +1,7 @@
 import numpy as np
 
-def PCA_numpy(x, n_components=2):
+
+def pca_numpy(x, n_components=2):
     # centro el dataset
     x_cent = x.copy()
     x_cent = x_cent - x.mean(axis=0)
@@ -15,12 +16,12 @@ def PCA_numpy(x, n_components=2):
     autovectores = autovectores[:, arg_sort]
 
     # Selecciono los n_components de mayor valor. (n_components <= m)
-    B = autovectores[:, :n_components]
+    b = autovectores[:, :n_components]
 
-    z = np.dot(x_cent, B)
-    x_recuperada = np.dot(z, B.T) + x.mean(axis=0)
+    z = np.dot(x_cent, b)
+    x_recuperada = np.dot(z, b.T) + x.mean(axis=0)
 
-    return B, z, x_recuperada
+    return b, z, x_recuperada
 
 
 # Codigo de verificacion:
