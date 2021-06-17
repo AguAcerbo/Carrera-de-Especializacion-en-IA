@@ -26,3 +26,8 @@ def dataset_manipulation(x, polinomy_grade=1, bias=True):
         dataset_x = np.vstack((dataset_x, np.ones(len(x))))
 
     return dataset_x.T
+
+# Pueden crear las features polinómicas manualmente con NumPy empleando np.power o con SKlearn (PolynomialFeatures)
+#from sklearn.preprocessing import PolynomialFeatures
+#poly = PolynomialFeatures(15, include_bias=False)
+#poly_data = poly.fit_transform(x.reshape(-1, 1))
