@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c37313f-8338-46d3-b3be-baf235cf9179" name="Default Changelist" comment="RL" />
+    <list default="true" id="5c37313f-8338-46d3-b3be-baf235cf9179" name="Default Changelist" comment="RL">
+      <change beforePath="$PROJECT_DIR$/../Clase_1/Ejercicios.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase_1/Ejercicios.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/split_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/split_dataset.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
