@@ -8,8 +8,8 @@ class Data(object):
 
     @staticmethod
     def _build_dataset(path):
-        structure = [('feature1', float),
-                     ('salida', float)]
+        structure = [('x', float),
+                     ('y', float)]
 
         with open(path, encoding="utf8") as data_csv:
             data_gen = ((float(line.split(',')[1]), float(line.split(',')[2]))

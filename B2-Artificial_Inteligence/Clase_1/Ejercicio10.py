@@ -50,6 +50,3 @@ class Rating_Dataset(object):
     
 rating = Rating_Dataset(r"C:\Users\Agustin\Documents\RepositorioCEIA_Git\Carrera-de-Especializacion-en-IA\B2-Artificial_Inteligence\Clase_1\archive")
 print(rating.get_dataset()[:5])
-
-# with open(r'C:\Users\Agustin\Documents\RepositorioCEIA_Git\Carrera-de-Especializacion-en-IA\B2-Artificial_Inteligence\Clase_1\ratings.pkl','wb') as file:
-#     pkl.dump(rating,file,protocol=pkl.HIGHEST_PROTOCOL)
