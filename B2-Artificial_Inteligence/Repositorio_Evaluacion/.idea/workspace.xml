@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c37313f-8338-46d3-b3be-baf235cf9179" name="Default Changelist" comment="RL">
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/EvaluacionFinal-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EvaluacionFinal.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clase_8_dataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Clase_1/Ejercicio10.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase_1/Ejercicio10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase_5/jupyterbooks/Regularización - Sintético.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../clase_5/jupyterbooks/Regularización - Sintético.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
