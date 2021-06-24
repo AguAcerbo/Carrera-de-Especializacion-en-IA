@@ -35,19 +35,169 @@ x_train, x_test, y_train, y_test = train_test_split(
     test_size=0.3,
     random_state=42)
 
-Pressure9am:	Datos NaN: 9825	En%: 9.870899683528407
-Pressure3pm:	Datos NaN: 9802	En%: 9.847792233887578
-WindDir9am:	Datos NaN: 7018	En%: 7.05078615562365
-WindGustDir:	Datos NaN: 6489	En%: 6.519314813884563
-WindGustSpeed:	Datos NaN: 6442	En%: 6.472095242879389
-WindDir3pm:	Datos NaN: 2634	En%: 2.646305319736776
-Humidity3pm:	Datos NaN: 2543	En%: 2.554880192896971
-Temp3pm:	Datos NaN: 1921	En%: 1.9299743808710503
-WindSpeed3pm:	Datos NaN: 1833	En%: 1.8415632692017883
-Humidity9am:	Datos NaN: 1231	En%: 1.2367508916461547
-Rainfall:	Datos NaN: 1034	En%: 1.0388305621138294
-RainToday:	Datos NaN: 1034	En%: 1.0388305621138294
-WindSpeed9am:	Datos NaN: 926	En%: 0.9303260159742804
-Temp9am:	Datos NaN: 627	En%: 0.6299291706434922
-MinTemp:	Datos NaN: 460	En%: 0.46214899281659716
-MaxTemp:	Datos NaN: 235	En%: 0.2360978550258703
+x_train['RainToday'] = x_train['RainToday'].replace({'No':0, 'Yes':1})
+y_train = y_train.replace({'No':0, 'Yes':1})
+
+x_test['RainToday'] = x_test['RainToday'].replace({'No':0, 'Yes':1})
+y_test = y_test.replace({'No':0, 'Yes':1})
+
+x_train['WindGustDir'] = x_train['WindGustDir'].replace({'E':(np.sin(0)+1)/2,
+                                                         'ENE': (np.sin(22.5*np.pi/180)+1)/2,
+                                                         'NE': (np.sin(45*np.pi/180)+1)/2,
+                                                         'NNE':(np.sin(67.5*np.pi/180)+1)/2,
+                                                         'N': (np.sin(90*np.pi/180)+1)/2,
+                                                         'NNW': (np.sin(112.5*np.pi/180)+1)/2,
+                                                         'NW': (np.sin(135*np.pi/180)+1)/2,
+                                                         'WNW': (np.sin(157.5*np.pi/180)+1)/2,
+                                                         'W': (np.sin(180*np.pi/180)+1)/2,
+                                                         'WSW': (np.sin(202.5*np.pi/180)+1)/2,
+                                                         'SW': (np.sin(225*np.pi/180)+1)/2,
+                                                         'SSW': (np.sin(247.5*np.pi/180)+1)/2,
+                                                         'S': (np.sin(270*np.pi/180)+1)/2,
+                                                         'SSE': (np.sin(292.5*np.pi/180)+1)/2,
+                                                         'SE': (np.sin(315*np.pi/180)+1)/2,
+                                                         'ESE': (np.sin(337.5*np.pi/180)+1)/2})
+
+x_train['WindDir9am'] = x_train['WindDir9am'].replace({'E':(np.sin(0)+1)/2,
+                                                       'ENE': (np.sin(22.5)+1)/2,
+                                                       'NE': (np.sin(45)+1)/2,
+                                                       'NNE':(np.sin(67.5)+1)/2,
+                                                       'N': (np.sin(90)+1)/2,
+                                                       'NNW': (np.sin(112.5)+1)/2,
+                                                       'NW': (np.sin(135)+1)/2,
+                                                       'WNW': (np.sin(157.5)+1)/2,
+                                                       'W': (np.sin(180)+1)/2,
+                                                       'WSW': (np.sin(202.5)+1)/2,
+                                                       'SW': (np.sin(225)+1)/2,
+                                                       'SSW': (np.sin(247.5)+1)/2,
+                                                       'S': (np.sin(270)+1)/2,
+                                                       'SSE': (np.sin(292.5)+1)/2,
+                                                       'SE': (np.sin(315)+1)/2,
+                                                       'ESE': (np.sin(337.5)+1)/2})
+
+x_train['WindDir3pm'] = x_train['WindDir3pm'].replace({'E':(np.sin(0)+1)/2,
+                                                       'ENE': (np.sin(22.5)+1)/2,
+                                                       'NE': (np.sin(45)+1)/2,
+                                                       'NNE':(np.sin(67.5)+1)/2,
+                                                       'N': (np.sin(90)+1)/2,
+                                                       'NNW': (np.sin(112.5)+1)/2,
+                                                       'NW': (np.sin(135)+1)/2,
+                                                       'WNW': (np.sin(157.5)+1)/2,
+                                                       'W': (np.sin(180)+1)/2,
+                                                       'WSW': (np.sin(202.5)+1)/2,
+                                                       'SW': (np.sin(225)+1)/2,
+                                                       'SSW': (np.sin(247.5)+1)/2,
+                                                       'S': (np.sin(270)+1)/2,
+                                                       'SSE': (np.sin(292.5)+1)/2,
+                                                       'SE': (np.sin(315)+1)/2,
+                                                       'ESE': (np.sin(337.5)+1)/2})
+
+x_test['WindGustDir'] = x_test['WindGustDir'].replace({'E':(np.sin(0)+1)/2,
+                                                         'ENE': (np.sin(22.5)+1)/2,
+                                                         'NE': (np.sin(45)+1)/2,
+                                                         'NNE':(np.sin(67.5)+1)/2,
+                                                         'N': (np.sin(90)+1)/2,
+                                                         'NNW': (np.sin(112.5)+1)/2,
+                                                         'NW': (np.sin(135)+1)/2,
+                                                         'WNW': (np.sin(157.5)+1)/2,
+                                                         'W': (np.sin(180)+1)/2,
+                                                         'WSW': (np.sin(202.5)+1)/2,
+                                                         'SW': (np.sin(225)+1)/2,
+                                                         'SSW': (np.sin(247.5)+1)/2,
+                                                         'S': (np.sin(270)+1)/2,
+                                                         'SSE': (np.sin(292.5)+1)/2,
+                                                         'SE': (np.sin(315)+1)/2,
+                                                         'ESE': (np.sin(337.5)+1)/2})
+
+x_test['WindDir9am'] = x_test['WindDir9am'].replace({'E':(np.sin(0)+1)/2,
+                                                       'ENE': (np.sin(22.5)+1)/2,
+                                                       'NE': (np.sin(45)+1)/2,
+                                                       'NNE':(np.sin(67.5)+1)/2,
+                                                       'N': (np.sin(90)+1)/2,
+                                                       'NNW': (np.sin(112.5)+1)/2,
+                                                       'NW': (np.sin(135)+1)/2,
+                                                       'WNW': (np.sin(157.5)+1)/2,
+                                                       'W': (np.sin(180)+1)/2,
+                                                       'WSW': (np.sin(202.5)+1)/2,
+                                                       'SW': (np.sin(225)+1)/2,
+                                                       'SSW': (np.sin(247.5)+1)/2,
+                                                       'S': (np.sin(270)+1)/2,
+                                                       'SSE': (np.sin(292.5)+1)/2,
+                                                       'SE': (np.sin(315)+1)/2,
+                                                       'ESE': (np.sin(337.5)+1)/2})
+
+x_test['WindDir3pm'] = x_test['WindDir3pm'].replace({'E':(np.sin(0)+1)/2,
+                                                       'ENE': (np.sin(22.5)+1)/2,
+                                                       'NE': (np.sin(45)+1)/2,
+                                                       'NNE':(np.sin(67.5)+1)/2,
+                                                       'N': (np.sin(90)+1)/2,
+                                                       'NNW': (np.sin(112.5)+1)/2,
+                                                       'NW': (np.sin(135)+1)/2,
+                                                       'WNW': (np.sin(157.5)+1)/2,
+                                                       'W': (np.sin(180)+1)/2,
+                                                       'WSW': (np.sin(202.5)+1)/2,
+                                                       'SW': (np.sin(225)+1)/2,
+                                                       'SSW': (np.sin(247.5)+1)/2,
+                                                       'S': (np.sin(270)+1)/2,
+                                                       'SSE': (np.sin(292.5)+1)/2,
+                                                       'SE': (np.sin(315)+1)/2,
+                                                       'ESE': (np.sin(337.5)+1)/2})
+
+# 'ENE': (np.sen(22.5)+1)/2,
+# 'NE': (np.sen(45)+1)/2,
+# 'NNE':(np.sen(67.5)+1)/2,
+# 'N': (np.sen(90)+1)/2,
+# 'NNW': (np.sen(112.5)+1)/2,
+# 'NW': (np.sen(135)+1)/2,
+# 'WNW': (np.sen(157.5)+1)/2,
+# 'W': (np.sen(180)+1)/2,
+# 'WSW': (np.sen(202.5)+1)/2,
+# 'SW': (np.sen(225)+1)/2,
+# 'SSW': (np.sen(247.5)+1)/2,
+# 'S': (np.sen(270)+1)/2,
+# 'SSE': (np.sen(292.5)+1)/2,
+# 'SE': (np.sen(315)+1)/2,
+# 'ESE': (np.sen(337.5)+1)/2
+
+
+a = enumerate(x_train['Location'].unique())
+city = {}
+for code,ciudad in enumerate(x_train['Location'].unique()):
+    city[ciudad] = code
+
+x_test['Location'] = x_test['Location'].replace(city)
+x_train['Location'] = x_train['Location'].replace(city)
+
+
+features_with_nan = ['WindGustDir', 'WindDir9am', 'WindDir3pm', 'RainToday', 'MinTemp', 'MaxTemp', \
+                     'Rainfall', 'WindGustSpeed', 'WindSpeed9am', 'WindSpeed3pm', 'Humidity9am', \
+                     'Humidity3pm', 'Pressure9am', 'Pressure3pm', 'Temp9am', 'Temp3pm']
+
+data_cca = dataset.dropna(inplace=False)
+
+
+# Pressure9am:	    Datos no NaN: 130395 	Datos Nan: 15065 	En%: 10.356799120033
+# Pressure3pm:	    Datos no NaN: 130432 	Datos Nan: 15028 	En%: 10.331362573903478
+# WindDir9am:	    Datos no NaN: 134894 	Datos Nan: 10566 	En%: 7.263852605527292
+# WindGustDir:	    Datos no NaN: 135134 	Datos Nan: 10326 	En%: 7.09885879279527
+# WindGustSpeed:	Datos no NaN: 135197 	Datos Nan: 10263 	En%: 7.055547916953114
+# Humidity3pm:	    Datos no NaN: 140953 	Datos Nan: 4507 	En%: 3.09844630826344
+# WindDir3pm:	    Datos no NaN: 141232 	Datos Nan: 4228 	En%: 2.906641000962464
+# Temp3pm:	        Datos no NaN: 141851 	Datos Nan: 3609 	En%: 2.4810944589577892
+# RainTomorrow:	    Datos no NaN: 142193 	Datos Nan: 3267 	En%: 2.245978275814657
+# RainToday:	    Datos no NaN: 142199 	Datos Nan: 3261 	En%: 2.241853430496356
+# Rainfall:	        Datos no NaN: 142199 	Datos Nan: 3261 	En%: 2.241853430496356
+# WindSpeed3pm:	    Datos no NaN: 142398 	Datos Nan: 3062 	En%: 2.105046060772721
+# Humidity9am:	    Datos no NaN: 142806 	Datos Nan: 2654 	En%: 1.8245565791282827
+# WindSpeed9am:	    Datos no NaN: 143693 	Datos Nan: 1767 	En%: 1.214766946239516
+# Temp9am:	        Datos no NaN: 143693 	Datos Nan: 1767 	En%: 1.214766946239516
+# MinTemp:	        Datos no NaN: 143975 	Datos Nan: 1485 	En%: 1.0208992162793895
+# MaxTemp:	        Datos no NaN: 144199 	Datos Nan: 1261 	En%: 0.8669049910628351
+
+
+x_train['MinTemp']=x_train['MinTemp'].fillna(x_train['MinTemp'].median())
+
+from sklearn.impute import KNNImputer
+
+imputer = KNNImputer(n_neighbors=3)
+X_train_knn_imp = imputer.fit_transform(x_train)
