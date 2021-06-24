@@ -200,4 +200,42 @@ x_train['MinTemp']=x_train['MinTemp'].fillna(x_train['MinTemp'].median())
 from sklearn.impute import KNNImputer
 
 imputer = KNNImputer(n_neighbors=3)
-X_train_knn_imp = imputer.fit_transform(x_train)
+x_train_knn_imp = imputer.fit_transform(x_train)
+
+x_train.iloc[:,'Pressure9am'] = x_train_knn_imp[:,15]
+
+
+
+df_train_c2 = pd.DataFrame(np.concatenate([x_train_c2,y_train_c2[:,np.newaxis]], axis=1), 
+                        columns=data_c2.columns[np.concatenate([sel.get_support(), [True]])])
+
+
+r = df_train.corr(method='pearson')
+MI = mutual_info_regression(x_train_cca, y_train_cca)
+
+fig, ax = plt.subplots(2,1, figsize=(22,15))
+ax[0].set_title('Información mutua')
+sns.heatmap([MI],ax=ax[0],cmap=sns.diverging_palette(220,10,as_cmap=True), annot=True,fmt=".2f")
+ax[0].set_xticklabels(df_train.columns.values[:-1])
+
+ax[1].set_title('Correlación de Pearson')
+sns.heatmap([r.iloc[-1][:-1]],cmap=sns.diverging_palette(220,10,as_cmap=True),ax=ax[1], annot=True,fmt=".2f")
+ax[1].set_xticklabels(df_train.columns.values[:-1])
+
+for ax in fig.axes:
+    plt.sca(ax)
+    plt.xticks(rotation=45)
+    
+    
+X_train_mi, X_test_mi, mi = select_features_mutual_info(x_train_red, y_train_cca, x_train_red)
+X_train_pc, X_test_pc, pc = select_features_pearson(x_test_red, y_test_cca, x_test_red)
+fig,axes = plt.subplots(2,1,figsize=(16,15))
+axes[0].set_title('Información mutua')
+sns.barplot( x = [c for c in df_train.columns[:-1] ], y = mi.scores_,ax=axes[0])
+axes[1].set_title('Pearson')
+sns.barplot( x = [c for c in df_train.columns[:-1] ], y = pc.scores_,ax=axes[1]); #Grafico el F score de cada feature
+pc.scores_
+for ax in fig.axes:
+    plt.sca(ax)
+    plt.xticks(rotation=22)
+
