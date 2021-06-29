@@ -24,7 +24,6 @@ def test(x, w11_1, w12_1, b1_1, w21_1, w22_1, b2_1, w11_2, w12_2, b1_2):
         a2_1 = sigmoid(z2_1)
             
         z1_2 = w11_2 * a1_1 + w12_2 * a2_1 + b1_2
-        a1_2 = sigmoid(z1_2)
         print(z1_2)
         j += y[sample]-z1_2
     return j/x.shape[0]
