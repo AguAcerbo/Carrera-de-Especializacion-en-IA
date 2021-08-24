@@ -1,2 +1,2 @@
-model_checkpoint_path: "resUnetInception4Sigmoid_25epocas_v2"
-all_model_checkpoint_paths: "resUnetInception4Sigmoid_25epocas_v2"
+model_checkpoint_path: "resUnetInception4Sigmoid_25epocas_v3"
+all_model_checkpoint_paths: "resUnetInception4Sigmoid_25epocas_v3"
