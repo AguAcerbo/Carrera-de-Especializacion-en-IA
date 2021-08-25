@@ -1,0 +1,2 @@
+model_checkpoint_path: "resUnetInception4Sigmoid_vFinal"
+all_model_checkpoint_paths: "resUnetInception4Sigmoid_vFinal"
